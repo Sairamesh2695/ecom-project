@@ -1,0 +1,15 @@
+Things to learn in Spring Boot full-stack E-Commerce project:
+
+1.Response Entity - allows to wrap the response in it.
+2. MVC architecture
+3. Spring data JPA
+4. H2 Database
+5. DTO pattern -> Design pattern used to transfer data btw software application subsystems
+6. JPQL -> Java/Jakarta Persistence Query Language
+7. spring actuators -> /health,/metrics etc..
+8. Spring Boot actuators provide built in production-ready features to monitor and manage applications
+9. Why actuators are imp? -> gives the ability to monitor and manage applications
+10. Features:
+          	Built-in endpoints
+          	Ability to view real time metrics
+          	Customizable
