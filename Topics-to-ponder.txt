@@ -10,6 +10,62 @@ Things to learn in Spring Boot full-stack E-Commerce project:
 8. Spring Boot actuators provide built in production-ready features to monitor and manage applications
 9. Why actuators are imp? -> gives the ability to monitor and manage applications
 10. Features:
-          	Built-in endpoints
-          	Ability to view real time metrics
-          	Customizable
+	Built-in endpoints
+	Ability to view real time metrics
+	Customizable
+11. For accessing health endpoint, we have 3 types: never, always, when-authorized
+12. If we have maven plugin in our spring boot application, then we need not to worry about the docker image generations.
+13. What are Paketo Buildpacks?
+	Buildpacks transform your application source code into container images
+	The Paketo open source project provides production-ready buildpacks for the most popular languages and frameworks
+14. Docker Commands:
+	-> docker pull <image>
+	-> docker push <username/image>
+	-> docker run -it -d -p <host-port>:<container-port> --name <name> <image>
+	-> docker stop <container-id/container-name>
+	-> docker start <container-id/container-name>
+	-> docker rm <container-id/container-name>
+	-> docker rmi <image-id/image-name>
+	-> docker ps	
+	-> docker ps -a 
+	-> docker images
+	-> docker erc -it <container-name/container-id> bash
+	-> docker build -t <username/image>
+	-> docker logs <container-name/container-id>
+	-> docker inspect <container-name/container-id>
+15. PostgreSQL:
+	-> It is an object-relational Database Management System(ORDBMS)
+	-> Why PostgreSQL?
+		-> SQL Compliance, Extensibility, Performance, Strong Community Support, Data Integrity
+	-> Why PostgreSQL over H2?
+		-> Scalability, Feature Set, Ecosystem and tools, Durability
+	-> PostgreSQL default port is 5432
+16. Docker Networking:
+	-> This enables communication between different docker containers
+	-> Commands:
+		-> docker network create ---- (to create a network)
+		-> docker network prune (to remove all the networks locally available)
+		-> docker network ls (list of the docker networks)
+17. Docker Compose:
+	-> Tool for defining and managing multi-container docker application.
+	-> docker compose up is to turn on the containers
+	-> docker compose down is to turn off the containers
+18. Monolithic Architecture: A design where all the components of an application are interconnected and interdependent. It can be said as tightly coupled.
+19. Problems with Monolithic Architecture:
+	-> Difficulty to implement the changes(as they all are tightly coupled).
+	-> Lack of scalability
+	-> Long-term commitment to a single tech-stack
+	-> Application complexity and its effect on development and deployment
+	-> Slowing down of IDEs
+	-> Increased Application start time
+	-> Large project size
+	-> Deploying for small changes
+	-> Team collaboration and Autonomy
+20. Microservices Architecture: structures an application as a collection of small autonomous services modelled around a business domain. They run as separate process and communicate via RPCs(Remote Procedural Calls). The well-known RPC is gRPC which is developed by google engineers.
+21. Principles of Microservices:
+	-> Single Responsibility(Each microservice should have single duty that it can do well)
+	-> Independence
+	-> Decentralization
+	-> Failure Isolation
+	-> Continuous Delivery/ Deployment
+	
